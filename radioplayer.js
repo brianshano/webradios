@@ -11,15 +11,17 @@ var playerConfig = {
         "skin":"cassette",
         "width":200,
         "height":120
-        };
+};
 var defaultRadio = {
         title:"PBB",
-        url:"http://pbb.laurentgarnier.com:8000/pbb128"
-        };
+        url:"http://relay1.bide-et-musique.com:9100/;",
+        metadataMode:"shoutcast"
+};
 
 function returnPlayerConfig() {
     playerConfig.title = defaultRadio.title;
     playerConfig.url = defaultRadio.url;
+    playerConfig.metadataMode = defaultRadio.metadataMode;
     return playerConfig;
 }
 
